@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruevas</title>
+    <!-- <link rel="stylesheet" href="Styles.css"> -->
+</head>
+<body>
+    <p>
+        <span class="Parentesis">(</span><span class="PalabraReservada">let</span> <span class="Parentesis">(</span>[<span class="Identificador">x0</span> <span class="Operador">+</span><span class="Parentesis">(</span><span class="Parentesis">(</span><span class="Numero">56</span> <span class="Numero">-9.0e67</span><span class="Parentesis">)</span> <span class="Numero">89.6</span><span class="Parentesis">)</span>]<span class="Parentesis">)</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;
+<span class="Parentesis">(</span><span class="PalabraReservada">cons</span> <span class="Parentesis">(</span><span class="PalabraReservada">let</span> <span class="Parentesis">(</span>[<span class="Identificador">x1</span> <span class="Parentesis">(</span><span class="PalabraReservada">cdr</span> <span class="Identificador">x0</span><span class="Parentesis">)</span>]<span class="Parentesis">)</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="Parentesis">(</span><span class="PalabraReservada">car</span> <span class="Identificador">x1</span><span class="Parentesis">)</span><span class="Parentesis">)</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="Parentesis">(</span><span class="PalabraReservada">let</span> <span class="Parentesis">(</span>[<span class="Identificador">x2</span> <span class="Parentesis">(</span><span class="PalabraReservada">car</span> <span class="Identificador">x0</span><span class="Parentesis">)</span>]<span class="Parentesis">)</span> <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    (<span class="PalabraReservada">cons</span> (<span class="PalabraReservada">let</span> ([<span class="Identificador">x3</span> (<span class="PalabraReservada">cdr</span> <span class="Identificador">x2</span>)]) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            (<span class="PalabraReservada">car</span> <span class="Identificador">x3</span>)) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            (<span class="PalabraReservada">cons</span> (<span class="PalabraReservada">let</span> ([<span class="Identificador">x4</span> (<span class="PalabraReservada">car</span> <span class="Identificador">x2</span>)]) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="Identificador">x4</span>) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                (<span class="PalabraReservada">cdr</span> <span class="Identificador">x2</span>)))))) 
+                                <span class="Comentario">; Esto es un comentario</span><br>
+    </p>
+
+    <style>
+        
+p {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-family: "Courier New";
+}
+
+.PalabraReservada {
+    color: purple;
+    font-weight: bolder;
+}
+
+.Operador {
+    color:rgb(245, 0, 0);
+}
+
+.Parentesis{
+    color:black;
+}
+
+.Identificador {
+    color: blue;
+    font-weight:bold;
+}
+
+.Comentario{
+    color: rgb(26, 122, 2);
+    font-style: italic;
+    font-weight: 500;
+}
+
+.Numero {
+    color:rgb(7, 170, 211);
+}
+
+    </style>
+</body>
+</html>

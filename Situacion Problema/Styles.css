@@ -1,0 +1,39 @@
+
+p {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-family: "Courier New";
+}
+
+.PalabraReservada {
+    color: purple;
+    font-weight: bolder;
+}
+
+.Operador {
+    color:rgb(245, 0, 0);
+}
+
+.Parentesis{
+    color:black;
+}
+
+.Identificador {
+    color: blue;
+    font-weight:bold;
+}
+
+.Comentario{
+    color: rgb(26, 122, 2);
+    font-style: italic;
+    font-weight: 500;
+}
+
+.Numero {
+    color:rgb(7, 170, 211);
+}
+
+.Error {
+    background-color: red;
+}

@@ -1,0 +1,9 @@
+(let ([x0 +((56 -9.0e67) 89.6)])
+     (cons (let ([x1 (cdr x0)])
+         (car x1))
+             (let ([x2 (car x0)])
+                 (cons (let ([x3 (cdr x2)])
+                     (car x3))
+                         (cons (let ([x4 (car x2)])
+                             x4)
+                                 (cdr x2)))))) ; Esto es un comentario
