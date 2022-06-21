@@ -1,0 +1,84 @@
+(defn scanner [AFD estado codigo lexema archivo]
+  (cond
+    ;; (nil? codigo) true 
+    (nil? (first codigo)) true
+    (member estado (first (next AFD)))
+    (if (> estado 105)
+      (do
+        (imprimir-lexema estado lexema archivo)
+        (scanner AFD 0 codigo nil archivo)) ;; No regresion
+      (do
+        (imprimir-lexema estado (next lexema) archivo)
+        (scanner AFD 0 (cons (first lexema) codigo) nil archivo)) ;; Regresion
+      )
+    true (scanner-aux AFD codigo (transicion (first AFD) estado (valor-simbolo (first codigo))) lexema archivo)))
+    (defn scanner [AFD estado codigo lexema archivo]
+  (cond
+    ;; (nil? codigo) true 
+    (nil? (first codigo)) true
+    (member estado (first (next AFD)))
+    (if (> estado 105)
+      (do
+        (imprimir-lexema estado lexema archivo)
+        (scanner AFD 0 codigo nil archivo)) ;; No regresion
+      (do
+        (imprimir-lexema estado (next lexema) archivo)
+        (scanner AFD 0 (cons (first lexema) codigo) nil archivo)) ;; Regresion
+      )
+    true (scanner-aux AFD codigo (transicion (first AFD) estado (valor-simbolo (first codigo))) lexema archivo)))
+    (defn scanner [AFD estado codigo lexema archivo]
+  (cond
+    ;; (nil? codigo) true 
+    (nil? (first codigo)) true
+    (member estado (first (next AFD)))
+    (if (> estado 105)
+      (do
+        (imprimir-lexema estado lexema archivo)
+        (scanner AFD 0 codigo nil archivo)) ;; No regresion
+      (do
+        (imprimir-lexema estado (next lexema) archivo)
+        (scanner AFD 0 (cons (first lexema) codigo) nil archivo)) ;; Regresion
+      )
+    true (scanner-aux AFD codigo (transicion (first AFD) estado (valor-simbolo (first codigo))) lexema archivo)))
+    (defn scanner [AFD estado codigo lexema archivo]
+  (cond
+    ;; (nil? codigo) true 
+    (nil? (first codigo)) true
+    (member estado (first (next AFD)))
+    (if (> estado 105)
+      (do
+        (imprimir-lexema estado lexema archivo)
+        (scanner AFD 0 codigo nil archivo)) ;; No regresion
+      (do
+        (imprimir-lexema estado (next lexema) archivo)
+        (scanner AFD 0 (cons (first lexema) codigo) nil archivo)) ;; Regresion
+      )
+    true (scanner-aux AFD codigo (transicion (first AFD) estado (valor-simbolo (first codigo))) lexema archivo)))
+    (defn scanner [AFD estado codigo lexema archivo]
+  (cond
+    ;; (nil? codigo) true 
+    (nil? (first codigo)) true
+    (member estado (first (next AFD)))
+    (if (> estado 105)
+      (do
+        (imprimir-lexema estado lexema archivo)
+        (scanner AFD 0 codigo nil archivo)) ;; No regresion
+      (do
+        (imprimir-lexema estado (next lexema) archivo)
+        (scanner AFD 0 (cons (first lexema) codigo) nil archivo)) ;; Regresion
+      )
+    true (scanner-aux AFD codigo (transicion (first AFD) estado (valor-simbolo (first codigo))) lexema archivo)))
+    (defn scanner [AFD estado codigo lexema archivo]
+  (cond
+    ;; (nil? codigo) true 
+    (nil? (first codigo)) true
+    (member estado (first (next AFD)))
+    (if (> estado 105)
+      (do
+        (imprimir-lexema estado lexema archivo)
+        (scanner AFD 0 codigo nil archivo)) ;; No regresion
+      (do
+        (imprimir-lexema estado (next lexema) archivo)
+        (scanner AFD 0 (cons (first lexema) codigo) nil archivo)) ;; Regresion
+      )
+    true (scanner-aux AFD codigo (transicion (first AFD) estado (valor-simbolo (first codigo))) lexema archivo)))

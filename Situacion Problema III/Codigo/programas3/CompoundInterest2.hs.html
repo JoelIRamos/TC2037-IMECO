@@ -1,0 +1,45 @@
+<html><head></head><body><p><span class="Identificador">compoundInterest</span>&nbsp <span class="Operador">::</span>&nbsp <span class="Identificador">Int</span>&nbsp <span class="Operador">-></span>&nbsp <span class="Identificador">Double</span><br>
+<span class="Identificador">compoundInterest</span>&nbsp <span class="Numero Ent">0</span>&nbsp <span class="Operador">=</span>&nbsp <span class="Error">1000</span><br>
+<span class="Identificador">compoundInterest</span>&nbsp <span class="Identificador">n</span>&nbsp <span class="Operador">=</span>&nbsp <span class="Numero Dec">1.05</span>&nbsp <span class="Operador">*</span>&nbsp <span class="Parentesis Abierto">(</span><span class="Identificador">compoundInterest</span>&nbsp <span class="Parentesis Abierto">(</span><span class="Identificador">n</span>&nbsp <span class="Operador">-</span>&nbsp <span class="Numero Ent">1</span><span class="Parentesis Cerrado">)</span><span class="Parentesis Cerrado">)</span><span class="Identificador"></span><br>
+<span class="Identificador">main</span>&nbsp <span class="Operador">=</span>&nbsp <span class="Identificador">printf</span>&nbsp <span class="String">"After 10 years, you have %.2f dollars."</span>&nbsp <span class="Parentesis Abierto">(</span><span class="Identificador">compoundInterest</span>&nbsp <span class="Numero Ent">10</span><span class="Parentesis Cerrado">)</span><br>
+</p><style>
+  .PalabraReservada {
+      color: purple;
+      font-weight: bolder;
+  }
+
+  .Operador {
+      color:rgb(245, 0, 0);
+  }
+
+  .Parentesis, .Corchete, .Bracket {
+      color:black;
+  }
+
+  .Identificador {
+      color: blue;
+      font-weight:bold;
+  }
+
+  .Comentario {
+      color: rgb(26, 122, 2);
+      font-style: italic;
+      font-weight: 500;
+  }
+
+  .Numero {
+      color:rgb(32, 186, 224);
+      font-weight: 400;
+  }
+
+  .Error {
+      background-color: red;
+  }
+
+  .Char, .String {
+      color: rgb(230, 156, 20);
+  }
+
+  .Regex {
+      color: darkgoldenrod;
+  }</style></body></html>

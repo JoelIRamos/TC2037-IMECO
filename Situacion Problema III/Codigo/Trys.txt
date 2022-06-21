@@ -1,0 +1,9 @@
+< > == <= >= 96
+-8.0e10 0.128 -90 -87.3 81.0
++ - * / |
+<- ->  
+"string de caracteres"
+'c' identificador
+_Error;
+-- bla bl
+if :: do else

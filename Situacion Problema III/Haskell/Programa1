@@ -1,0 +1,113 @@
+primes = filterPrime [2..]
+  where filterPrime (p:xs) =
+    p : filterPrime [x | x <- xs, x 'mod' p /= 0]
+
+    helloPerson :: String -> String
+helloPerson name = "Hello" ++ " " ++ name ++ "!" 
+
+
+main :: IO ()
+main = do
+   putStrLn "Hello! What's your name?"
+   name <- getLine
+   let statement = helloPerson name
+   putStrLn statement
+
+
+quicksort :: Ord a => [a] -> [a]
+quicksort []     = []
+quicksort (p:xs) = (quicksort lesser) ++ [p] ++ (quicksort greater)
+    where
+        lesser  = filter (< p) xs
+        greater = filter (>= p) xs
+
+
+quicksort (p:xs) = (quicksort lesser) ++ [p] ++ (quicksort greater)
+    where
+        lesser  = filter (< p) xs
+        greater = filter (>= p) xs
+
+
+factorial n = if n < 2
+              then 1
+              else n * factorial (n - 1)
+
+
+module Main (main) where          -- not needed in interpreter, is the default in a module file
+
+main :: IO ()                     -- the compiler can infer this type definition
+main = putStrLn "Hello, World!"
+
+
+factorial n
+   | n < 2     = 1
+   | otherwise = n * factorial (n - 1)
+
+
+-- Type annotation (optional, same for each implementation)
+quickSort :: Ord a => [a] -> [a]
+
+-- Using list comprehensions
+quickSort []     = []                               -- The empty list is already sorted
+quickSort (x:xs) = quickSort [a | a <- xs, a < x]   -- Sort the left part of the list
+                   ++ [x] ++                        -- Insert pivot between two sorted parts
+                   quickSort [a | a <- xs, a >= x]  -- Sort the right part of the list
+
+
+-- Using filter
+quickSort []     = []
+quickSort (x:xs) = quickSort (filter (<x) xs)
+                   ++ [x] ++
+                   quickSort (filter (>=x) xs)
+
+
+def compound_interest(years):
+  current_money = 1000
+  for year in range(years):
+    current_money = current_money * 1.05
+  print('After {years} years, you have {money:.2f} dollars.'.format(years=years, money=current_money))
+  return current_money 
+compound_interest(10)
+
+
+compoundInterest :: Int -> Double
+compoundInterest 0 = 1000
+compoundInterest n = 1.05 * (compoundInterest (n - 1))
+main = printf "After 10 years, you have %.2f dollars." (compoundInterest 10)
+
+
+
+twoNumbers :: (Double, Double)
+twoNumbers = (3.14, 2.59)
+address :: (String, Int, String, Int)
+address = ("New York", 10005, "Wall St.", 1)
+main = do 
+  print twoNumbers 
+  print address
+
+
+sayTwice :: String -> String
+sayTwice s = s ++ s
+main = print (sayTwice "hello")
+
+
+applyTwice :: (Int -> Int) -> Int -> Int
+applyTwice f x = f (f x)
+double :: Int -> Int
+double x = 2 * x
+next :: Int -> Int 
+next x = x + 1
+main = do 
+  print (applyTwice double 2) -- quadruples
+  print (applyTwice next 1) --adds 2
+
+
+applyTwice :: (Int -> Int) -> Int -> Int
+applyTwice f = f . f
+main = do 
+  print (applyTwice (\x -> x * 2) 8)
+  print (applyTwice (\x -> x + 1) 7)
+
+
+Wikipedia, Haskell & replit
+educative.io

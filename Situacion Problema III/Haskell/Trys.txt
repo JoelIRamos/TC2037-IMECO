@@ -1,0 +1,8 @@
+< > == <- -> <= >= 96 
++ - * / | 
+and or not true false
+"string de caracteres"
+'c'
+'caracter malaplicado' 
+-- bla 
+algo :: 
